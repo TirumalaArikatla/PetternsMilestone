@@ -4,4 +4,4 @@ RUN mvn clean package -Pprod -DskipTests
 FROM eclipse-temurin:17-alpine
 COPY --from=build /target/DogManagementSystem-0.0.1-SNAPSHOT.jar DogManagementSystem.jar
 EXPOSE 8080
-CMD ["java", "-jar", "DogsManagementSystem.jar"]
+CMD ["java", "-jar", "DogManagementSystem.jar"]
